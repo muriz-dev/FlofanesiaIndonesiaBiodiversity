@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Navigation */
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+/* Background images */
+.hero-bg {
+  background-image: url('/assets/background/background_tentangkami1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.monkey-bg {
+  background-image: url('/assets/background/background_tentangkami2.png');
+  background-size: cover;
+  background-position: center;
+}
