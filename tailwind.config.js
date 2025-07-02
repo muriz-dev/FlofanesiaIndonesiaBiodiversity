@@ -39,9 +39,7 @@ module.exports = {
           "green-600": "#a6df00",
           "green-700": "#81ae00",
           "green-800": "#648700",
-          "green-900": "#4c6700"
-        },
-        "secondary": {
+          "green-900": "#4c6700",
           "dark-green-50": "#e9f2ee",
           "dark-green-100": "#bad7ca",
           "dark-green-200": "#98c3b0",
@@ -52,6 +50,8 @@ module.exports = {
           "dark-green-700": "#16593b",
           "dark-green-800": "#11452e",
           "dark-green-900": "#0d3523",
+        },
+        "secondary": {
           "cream-50": "#fffffc",
           "cream-100": "#fffdf4",
           "cream-200": "#fffdef",
