@@ -4,27 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tentang Kami - Flofanesia</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/input.css">
+  <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 <body class="bg-white">
   
-  <!-- Header Navigation -->
+  <!-- Navbar -->
   <header class="w-full px-6 md:px-12 lg:px-28 py-6 md:py-8 lg:py-10 fixed top-0 left-0 z-50 bg-zinc-900/60 backdrop-blur-sm transition-transform duration-300">
     <nav class="flex flex-wrap justify-between items-center">
-      <a href="/public/index.html" class="flex items-center">
-        <img class="h-8 md:h-11 brightness-0 invert" src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" />
+      <a href="./index.html" class="flex items-center">
+        <img class="h-8 md:h-11 brightness-0 invert" src="./assets/img/logo/logo.png" alt="FLOFANESIA" />
       </a>
       <div class="hidden lg:flex items-center gap-8 xl:gap-16">
-        <a href="/public/index.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Beranda</a>
+        <a href="./index.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Beranda</a>
         <div class="flex flex-col items-center">
-          <a href="/public/tentangkami.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Tentang</a>
+          <a href="./tentangkami.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Tentang</a>
           <div class="w-full h-0 outline outline-2 outline-offset-[-1px] outline-zinc-100"></div>
         </div>
-        <a href="/artikel" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Artikel</a>
-        <a href="/eksplorasi" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Eksplorasi</a>
-        <a href="/public/pencarian.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Pencarian</a>
+        <a href="./artikel" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Artikel</a>
+        <a href="./eksplorasi" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Eksplorasi</a>
+        <a href="./pencarian.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Pencarian</a>
       </div>
       <button class="lg:hidden text-white" id="mobile-menu-button">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,28 +31,21 @@
         </svg>
       </button>
     </nav>
-    <!-- Mobile menu -->
-    <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
-      <div class="flex flex-col space-y-4">
-        <a href="/public/index.html" class="text-zinc-100 text-xl font-semibold">Beranda</a>
-        <a href="/public/tentangkami.html" class="text-zinc-100 text-xl font-semibold border-b-2 border-zinc-100 pb-1 inline-block">Tentang</a>
-        <a href="/artikel" class="text-zinc-100 text-xl font-semibold">Artikel</a>
-        <a href="/eksplorasi" class="text-zinc-100 text-xl font-semibold">Eksplorasi</a>
-        <a href="/public/pencarian.html" class="text-zinc-100 text-xl font-semibold">Pencarian</a>
-      </div>
-    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-bg relative w-full">
+  <!-- Kata-Kata -->
+  <section class="relative w-full">
+    <img src="./assets/img/background/background_tentangkami1.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover">
     <div class="absolute inset-x-0 bottom-0 h-[65%] bg-gradient-to-t from-black/50 to-transparent backdrop-blur-[2px]"></div>
     <div class="relative min-h-screen flex items-end">
-      <div class="container mx-auto px-6 md:px-12 lg:px-28 pt-32 pb-24">
+      <div class="container mx-auto px-6 md:px-12 lg:px-28 pt-32 pb-32">
         <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
-          <h1 class="text-white text-3xl md:text-5xl font-medium leading-tight max-w-md">
-            Lestarikan Alam, Mulai dari Pengetahuan.
+          <h1 class="text-white text-4xl md:text-6xl font-medium leading-tight max-w-md mt-8">
+            Lestarikan Alam,<br>
+            Mulai dari<br>
+            Pengetahuan.
           </h1>
-          <p class="text-white text-base md:text-xl lg:text-right max-w-2xl">
+          <p class="text-white text-base md:text-lg lg:text-right max-w-3xl lg:max-w-3xl lg:-ml-20 pt-20">
             Dari pegunungan hingga laut, Indonesia menyimpan jutaan cerita tentang kehidupan alam yang menakjubkan. 
             Di Flofanesia, kamu bisa mengeksplorasi informasi ilmiah dan menarik tentang flora dan fauna lokal, 
             sambil membangun kesadaran untuk ikut merawat lingkungan sekitar.
@@ -63,7 +55,7 @@
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- Tim Kami -->
   <section class="bg-white py-16 md:py-24 lg:py-28">
     <div class="container mx-auto px-6 md:px-12 lg:px-28">
       <div class="mb-12 text-center">
@@ -72,10 +64,10 @@
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Team Member 1 -->
+        <!-- Rizki -->
         <div class="bg-zinc-800 rounded-[20px] overflow-hidden">
           <div class="relative">
-            <img src="/public/assets/img/team/rizki.png" alt="Muhamad Rizki" class="w-full aspect-[3/4] object-cover">
+            <img src="./assets/img/team/rizki.png" alt="Muhamad Rizki" class="w-full aspect-[3/4] object-cover">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent pt-16 pb-6 px-6 backdrop-blur-[2px]">
               <h3 class="text-3xl font-bold text-zinc-100">Muhamad Rizki</h3>
               <p class="text-base font-medium text-zinc-100">Backend Developer</p>
@@ -101,10 +93,10 @@
           </div>
         </div>
 
-        <!-- Team Member 2 -->
+        <!-- Ikmal -->
         <div class="bg-zinc-800 rounded-[20px] overflow-hidden">
           <div class="relative">
-            <img src="/public/assets/img/team/ikmal.png" alt="Ikmal Luthfi" class="w-full aspect-[3/4] object-cover">
+            <img src="./assets/img/team/ikmal.png" alt="Ikmal Luthfi" class="w-full aspect-[3/4] object-cover">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent pt-16 pb-6 px-6 backdrop-blur-[2px]">
               <h3 class="text-3xl font-bold text-zinc-100">Ikmal Luthfi</h3>
               <p class="text-base font-medium text-zinc-100">Frontend Developer</p>
@@ -130,10 +122,10 @@
           </div>
         </div>
 
-        <!-- Team Member 3 -->
+        <!-- Bima -->
         <div class="bg-zinc-800 rounded-[20px] overflow-hidden">
           <div class="relative">
-            <img src="/public/assets/img/team/bima.png" alt="Bima Turangga Bayu" class="w-full aspect-[3/4] object-cover">
+            <img src="./assets/img/team/bima.png" alt="Bima Turangga Bayu" class="w-full aspect-[3/4] object-cover">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent pt-16 pb-6 px-6 backdrop-blur-[2px]">
               <h3 class="text-3xl font-bold text-zinc-100">Bima Turangga Bayu</h3>
               <p class="text-base font-medium text-zinc-100">UI/UX Designer</p>
@@ -162,8 +154,9 @@
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="monkey-bg relative">
+  <!-- Mulai Eksplorasi -->
+  <section class="relative">
+    <img src="./assets/img/background/background_tentangkami2.png" alt="CTA Background" class="absolute inset-0 w-full h-full object-cover">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class="relative container mx-auto px-6 md:px-12 lg:px-28 py-16 md:py-24 lg:py-28">
       <div class="md:max-w-lg lg:max-w-xl ml-auto">
@@ -190,7 +183,7 @@
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
         <div class="max-w-xs">
-          <img src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" class="h-16 mb-6">
+          <img src="./assets/img/logo/logo.png" alt="FLOFANESIA" class="h-16 mb-6">
           <p class="text-zinc-800 text-lg md:text-xl">Jelajahi Flora dan Fauna Indonesia</p>
           
           <div class="flex items-center gap-5 mt-8">
@@ -216,8 +209,8 @@
           <div>
             <h3 class="text-zinc-800 text-xl font-semibold mb-5">Tentang</h3>
             <ul class="space-y-2.5">
-              <li><a href="/public/tentangkami.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Tentang Kami</a></li>
-              <li><a href="/public/kontak.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kontak</a></li>
+              <li><a href="./tentangkami.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Tentang Kami</a></li>
+              <li><a href="./kontak.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kontak</a></li>
             </ul>
           </div>
           
@@ -251,6 +244,6 @@
     </div>
   </footer>
 
-  <script src="/src/js/main.js"></script>
+  <script src="../src/js/main.js"></script>
 </body>
 </html>

@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Flofanesia</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/input.css">
-  <!-- Replace the existing CSS link -->
+  <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 <body>
   
-    <!-- Header Navigation -->
+    <!-- Header -->
     <header class="w-full px-6 md:px-12 lg:px-28 py-6 md:py-8 lg:py-10 fixed top-0 left-0 z-50 bg-zinc-900/60 backdrop-blur-sm transition-transform duration-300">
       <nav class="flex flex-wrap justify-between items-center">
-        <a href="/public/index.html" class="flex items-center">
-          <img class="h-8 md:h-11 brightness-0 invert" src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" />
+        <a href="./index.html" class="flex items-center">
+          <img class="h-8 md:h-11 brightness-0 invert" src="./assets/img/logo/logo.png" alt="FLOFANESIA" />
         </a>
         <div class="hidden lg:flex items-center gap-8 xl:gap-16">
-          <a href="/public/index.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Beranda</a>
-          <a href="/public/tentangkami.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Tentang</a>
-          <a href="/artikel" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Artikel</a>
-          <a href="/eksplorasi" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Eksplorasi</a>
-          <a href="/public/pencarian.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Pencarian</a>
+          <a href="./index.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Beranda</a>
+          <a href="./tentangkami.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Tentang</a>
+          <a href="./artikel" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Artikel</a>
+          <a href="./eksplorasi" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Eksplorasi</a>
+          <a href="./pencarian.html" class="text-zinc-100 text-lg xl:text-xl font-semibold hover:text-white">Pencarian</a>
         </div>
         <button class="lg:hidden text-white" id="mobile-menu-button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,29 +28,19 @@
           </svg>
         </button>
       </nav>
-      <!-- Mobile menu -->
-      <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
-        <div class="flex flex-col space-y-4">
-          <a href="/public/index.html" class="text-zinc-100 text-xl font-semibold">Beranda</a>
-          <a href="/public/tentangkami.html" class="text-zinc-100 text-xl font-semibold border-b-2 border-zinc-100 pb-1 inline-block">Tentang</a>
-          <a href="/artikel" class="text-zinc-100 text-xl font-semibold">Artikel</a>
-          <a href="/eksplorasi" class="text-zinc-100 text-xl font-semibold">Eksplorasi</a>
-          <a href="/public/pencarian.html" class="text-zinc-100 text-xl font-semibold">Pencarian</a>
-        </div>
-      </div>
     </header>
 
-    <!-- Main Content -->
     <main class="pt-28 md:pt-36 bg-zinc-900">
-      <!-- Contact Section -->
+
+      <!-- Kontak -->
       <section class="w-full px-6 md:px-12 lg:px-28 pt-20 pb-20 bg-zinc-900">
         <div class="max-w-7xl mx-auto">
-          <div class="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12">
-            <h1 class="text-white text-3xl md:text-4xl font-medium leading-tight max-w-sm">Jelajahi Keajaiban Hayati Indonesia Bersama Kami!</h1>
-            <p class="text-white text-lg md:text-xl lg:text-right max-w-2xl">Punya pertanyaan tentang kekayaan alam Indonesia, ingin berkolaborasi, atau sekadar berbagi cerita? Kami senang mendengar dari Anda! Hubungi kami untuk berkontribusi dalam menjaga biodiversitas nusantara.</p>
+          <div class="flex flex-col lg:flex-row justify-between items-end gap-8 mb-12">
+            <h1 class="text-white text-3xl md:text-4xl font-medium leading-tight max-w-2xl">Jelajahi Keajaiban Hayati Indonesia Bersama Kami!</h1>
+            <p class="text-white text-base md:text-lg lg:text-right max-w-3xl pt-2 lg:pt-0">Punya pertanyaan tentang kekayaan alam Indonesia, ingin berkolaborasi, atau sekadar berbagi cerita? Kami senang mendengar dari Anda! Hubungi kami untuk berkontribusi dalam menjaga biodiversitas nusantara.</p>
           </div>
           
-          <!-- Contact Form -->
+          <!-- Form -->
           <div class="w-full p-6 md:p-10 lg:p-14 bg-gradient-to-br from-neutral-600/50 to-zinc-800/50 rounded-xl md:rounded-[20px] outline outline-2 outline-offset-[-2px] outline-stone-300">
             <form id="contact-form" class="space-y-8">
               <div class="space-y-2.5">
@@ -86,7 +74,7 @@
         <div class="max-w-7xl mx-auto">
           <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
             <div class="max-w-xs">
-              <img src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" class="h-16 mb-6">
+              <img src="./assets/img/logo/logo.png" alt="FLOFANESIA" class="h-16 mb-6">
               <p class="text-zinc-800 text-lg md:text-xl">Jelajahi Flora dan Fauna Indonesia</p>
               
               <div class="flex items-center gap-5 mt-8">
@@ -112,8 +100,8 @@
               <div>
                 <h3 class="text-zinc-800 text-xl font-semibold mb-5">Tentang</h3>
                 <ul class="space-y-2.5">
-                  <li><a href="/public/tentangkami.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Tentang Kami</a></li>
-                  <li><a href="/public/kontak.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kontak</a></li>
+                  <li><a href="./tentangkami.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Tentang Kami</a></li>
+                  <li><a href="./kontak.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kontak</a></li>
                 </ul>
               </div>
               
@@ -149,7 +137,6 @@
     </main>
   </div>
 
-  <script src="/src/js/main.js"></script>
-  <script src="/src/js/kontak.js"></script>
+  <script src="../src/js/main.js"></script>
 </body>
 </html>
