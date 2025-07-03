@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base styles */
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -12,15 +11,24 @@ body {
   transform: translateY(-100%);
 }
 
-/* Background images */
+/* Tentang Kami */
 .hero-bg {
-  background-image: url('/assets/background/background_tentangkami1.png');
+  background-image: url('/public/assets/img/background/background_tentangkami1.png');
   background-size: cover;
   background-position: center;
 }
 
 .monkey-bg {
-  background-image: url('/assets/background/background_tentangkami2.png');
+  background-image: url('/public/assets/img/background/background_tentangkami2.png');
   background-size: cover;
   background-position: center;
+}
+
+/* Pencarian */
+.species-card {
+  transition: transform 0.3s ease;
+}
+
+.species-card:hover {
+  transform: scale(1.02);
 }
