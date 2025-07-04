@@ -10,12 +10,382 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-base font-heading text-primary-brand my-8">
-        Selamat Datang di Proyek Saya
-    </h1>
-    <button class="bg-primary-green-500 hover:bg-primary-green-900 text-white font-body py-2 px-4 rounded">
-        Klik Saya
-    </button>
-    <script src="./assets/js/script.js"></script>
+    <!-- Header Navigation -->
+    <header class="w-full px-6 md:px-12 lg:px-28 py-6 md:py-8 fixed top-0 left-0 z-50 bg-zinc-900/60 backdrop-blur-sm transition-transform duration-300">
+        <nav class="flex flex-wrap justify-between items-center">
+            <a href="/public/index.html" class="flex items-center">
+                <img class="h-8 md:h-11 brightness-0 invert" src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" />
+            </a>
+            <div class="hidden lg:flex items-center gap-8 xl:gap-16">
+                <a href="/public/index.html" class="text-zinc-100 text-lg font-semibold hover:text-white">Beranda</a>
+                <a href="/public/tentangkami.html" class="text-zinc-100 text-lg font-semibold hover:text-white">Tentang</a>
+                <a href="/artikel" class="text-zinc-100 text-lg font-semibold hover:text-white">Artikel</a>
+                <a href="/eksplorasi" class="text-zinc-100 text-lg font-semibold hover:text-white">Eksplorasi</a>
+                <div class="flex flex-col items-center">
+                <a href="/public/pencarian.html" class="text-zinc-100 text-lg font-semibold hover:text-white">Pencarian</a>
+                <!-- <div class="w-full outline outline-2 outline-offset-[-1px] outline-zinc-100"></div> -->
+                </div>
+            </div>
+            <button class="lg:hidden text-white" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="/public/index.html" class="text-zinc-100 text-xl font-semibold">Beranda</a>
+                <a href="/public/tentangkami.html" class="text-zinc-100 text-xl font-semibold">Tentang</a>
+                <a href="/artikel" class="text-zinc-100 text-xl font-semibold">Artikel</a>
+                <a href="/eksplorasi" class="text-zinc-100 text-xl font-semibold">Eksplorasi</a>
+                <a href="/public/pencarian.html" class="text-zinc-100 text-xl font-semibold border-b-2 border-zinc-100 pb-1 inline-block">Pencarian</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Navigation -->
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <!-- <section class="relative text-center"> 
+            <img class="w-full" src="./assets/img/fauna/fauna-1.jpg" alt="" srcset="">
+            <div class="w-full h-full bg-black opacity-50 absolute top-0 z-0"></div>
+            <div class="absolute top-1/3 px-28 text-left">
+                <h1 class="text-2xl lg:text-4xl font-medium text-white">
+                    Jelajahi Keanekaragaman
+                </h1>
+                <h1 class="text-2xl lg:text-4xl font-medium text-white">
+                    Flora dan Fauna Indonesia
+                </h1>
+                <p class="text-lg text-white mt-2">Akses data lengkap tentang flora dan fauna Indonesia.</p>
+                <a href="/eksplorasi" class="inline-flex items-center bg-lime-200 rounded-full pl-0.5 pr-4 py-0.5 mt-8 hover:bg-lime-300 transition-colors">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-zinc-800 mr-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                    <span class="text-zinc-800 text-xl font-medium">Mulai Eksplorasi</span>
+                </a>
+            </div>
+        </section> -->
+        <section class="relative bg-[url('/public/assets/img/fauna/fauna-1.jpg')] bg-cover bg-center h-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative container mx-auto px-8 lg:px-28 py-24 lg:py-48">
+                <div class="">
+                    <h2 class="text-white text-xl lg:text-4xl font-medium leading-tight mb-5 tracking-wide">Jelajahi Keanekaragaman</h2>
+                    <h2 class="text-white text-xl lg:text-4xl font-medium leading-tight mb-5 tracking-wide">Flora dan Fauna Indonesia</h2>
+                    <p class="text-white text-base lg:text-lg mb-8">Akses data lengkap tentang flora dan fauna Indonesia.</p>
+                    <a href="/eksplorasi" class="inline-flex items-center bg-lime-200 rounded-full pl-0.5 pr-4 py-0.5 hover:bg-lime-300 transition-colors">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-zinc-800 mr-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                        <span class="text-zinc-800 text-base lg:text-lg font-medium">Mulai Eksplorasi</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- About Website -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 lg:grid-rows-1 p-8 lg:p-28">
+            <div class="lg:col-span-2 lg:self-center lg:mr-24">
+                <h1 class="text-2xl font-medium lg:text-4xl text-gray-950">Temukan, Pelajari, Lindungi:</h1>
+                <h1 class="text-2xl font-medium lg:text-4xl text-gray-300">Gerbang Utama untuk Mengenal Satwa Liar Indonesia</h1>
+                <p class="text-base lg:text-lg mt-2">Flofanesia hadir untuk mendukung pendidikan keanekaragaman hayati di Indonesia dan menghimpun beragam pengetahuan mengenai persebaran spesies serta perubahan yang terjadi dari waktu ke waktu.</p>
+                <button class="text-base lg:text-lg text-gray-900 font-medium bg-primary-green-200 rounded-3xl px-4 py-2 mt-4">Selengkapnya</button>
+            </div>
+            <div class="self-center">
+                <img src="./assets/img/cendrawasih-edit.png" alt="" srcset="">
+            </div>
+        </section>
+        <!-- End About Website -->
+
+        <!-- Statistic -->
+        <section class="bg-gray-950 p-8 lg:p-28">
+            <div class="text-center">
+                <h1 class="text-2xl lg:text-4xl text-white font-medium">Statistik Biodiversitas</h1>
+                <p class="text-base lg:text-lg text-white mt-2">Berikut adalah Data Statistik Flora dan Fauna di Zona Peralihan, Asiatis, dan Australis.</p>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-4">
+                <div class="relative max-w-xl mt-20">
+                    <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-2.jpg" alt="Random image">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                    <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                    <div>
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start">
+                            <p class="text-white text-lg p-4">Peralihan</p>
+                        </div>
+                        <div class="absolute inset-0 bottom-0 flex items-end justify-start">
+                            <div class="flex-col p-4">
+                                <p class="text-white text-lg">Flora</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                                <p class="text-white text-lg">Fauna</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative max-w-xl mt-20">
+                    <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-1.jpg" alt="Random image">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                    <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                    <div>
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start">
+                            <p class="text-white text-lg p-4">Asiatis</p>
+                        </div>
+                        <div class="absolute inset-0 bottom-0 flex items-end justify-start">
+                            <div class="flex-col p-4">
+                                <p class="text-white text-lg">Flora</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                                <p class="text-white text-lg">Fauna</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative max-w-xl mt-20">
+                    <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-3.jpg" alt="Random image">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                    <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                    <div>
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start">
+                            <p class="text-white text-lg p-4">Australis</p>
+                        </div>
+                        <div class="absolute inset-0 bottom-0 flex items-end justify-start">
+                            <div class="flex-col p-4">
+                                <p class="text-white text-lg">Flora</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                                <p class="text-white text-lg">Fauna</p>
+                                <h2 class="text-white text-3xl font-bold">200.000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Statistic -->
+
+        <!-- Article -->
+        <section class="p-8 lg:p-28">
+            <div class="grid lg:grid-cols-4 grid-rows-1">
+                <div class="col-span-3">
+                    <h1 class="text-2xl lg:text-4xl font-medium text-gray-900">Temukan Berita dan Artikel</h1>
+                    <h1 class="text-2xl lg:text-4xl font-medium text-gray-300">Terbaru tentang Flora & Fauna Indonesia</h1>
+                    <p class="text-base mt-2">Eksplorasi Terkini Informasi Konservasi, Penemuan Spesies Baru, dan Fenomena Alam Eksklusif Nusantara.</p>
+                </div>
+                <div class="justify-self-end place-self-end"> 
+                    <button class="text-base lg:text-lg text-gray-900 font-medium bg-primary-green-200 rounded-3xl px-4 py-2 mt-4">Selengkapnya</button>
+                </div>
+            </div>
+            <div class="mt-12">
+                <div class="grid lg:grid-cols-3 grid-cols-1 justify-start gap-4">
+                    <div>
+                        <div class="relative max-w-xl">
+                            <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-2.jpg" alt="Random image">
+                            <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                            <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                            <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                                <p class="bg-primary-green-200 text-black text-sm lg:text-base font-medium py-2 px-4 rounded-full">Isu Lingkungan</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-medium">03-03-2025</p>
+                            <h4 class="text-lg lg:text-xl font-semibold mt-1">Rahasia Bunga Bangkai</h4>
+                            <p class="text-base lg:text-lg mt-2">Tak hanya ukurannya yang mencolok ...</p>
+                            <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative max-w-xl">
+                            <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-4.jpg" alt="Random image">
+                            <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                            <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                            <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                                <p class="bg-primary-green-200 text-black text-sm lg:text-base font-medium py-2 px-4 rounded-full">Konservasi</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-medium">03-03-2025</p>
+                            <h4 class="text-lg lg:text-xl font-semibold mt-1">Pelanduk Jawa di Balik Semak</h4>
+                            <p class="text-base lg:text-lg mt-2">Di balik tubuh kecilnya, pelanduk ...</p>
+                            <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative max-w-xl">
+                            <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-3.jpg" alt="Random image">
+                            <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+                            <!-- <div class="absolute inset-0 top-1/3 bg-black opacity-50 rounded-md"></div> -->
+                            <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                                <p class="bg-primary-green-200 text-black text-sm lg:text-base font-medium py-2 px-4 rounded-full">Habitat</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm font-medium">03-03-2025</p>
+                            <h4 class="text-lg lg:text-xl font-semibold mt-1">Paku Tanduk Rusa di Udara</h4>
+                            <p class="text-base lg:text-lg mt-2">Terselip di antara batang pohon, paku ...</p>
+                            <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Article -->
+
+        <!-- FAQ -->
+        <section class="p-8 lg:p-28">
+            <div class="text-center">
+                <h1 class="text-2xl lg:text-4xl font-medium">FAQ Biodiversitas</h1>
+                <p class="text-base lg:text-lg mt-2">Temukan pertanyaan-pertanyaan yang sering diajukan terkait biodiversitas..</p>
+            </div>
+            <div class="grid grid-cols-1 gap-8 mt-8">
+                <div class="bg-gray-50 rounded-3xl px-8 py-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-lg lg:text-2xl font-medium">Apa itu biodiversitas?</h3>
+                        <div class="self-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                            <path d="M9.25 13.875L18.5 23.125L27.75 13.875" stroke="#2F3236" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-50 rounded-3xl px-8 py-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-lg lg:text-2xl font-medium">Mengapa biodiversitas itu penting?</h3>
+                        <div class="self-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                            <path d="M9.25 13.875L18.5 23.125L27.75 13.875" stroke="#2F3236" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-50 rounded-3xl px-8 py-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-lg lg:text-2xl font-medium">Apa saja ancaman utama terhadap biodiversitas?</h3>
+                        <div class="self-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                            <path d="M27.75 23.125L18.5 13.875L9.25 23.125" stroke="#2F3236" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <article class="mt-4">
+                        <p>
+                            Saat ini, laju kepunahan spesies jauh lebih cepat dari proses alaminya. Ancaman utamanya disebabkan oleh aktivitas manusia, yang sering disingkat sebagai HIPPO:
+                        </p>
+                        <ul class="list-disc list-outside mt-2 px-4">
+                            <li>
+                                H (Habitat Loss) - Kerusakan dan Fragmentasi Habitat: Penebangan hutan (deforestasi) untuk perkebunan, pembangunan perkotaan, dan pertambangan adalah penyebab utama hilangnya rumah bagi satwa liar.
+                            </li>
+                            <li>
+                                I (Invasive Species) - Spesies Asing Invasif: Masuknya spesies dari luar ke suatu ekosistem dapat mengganggu rantai makanan dan mengalahkan spesies asli dalam persaingan memperebutkan sumber daya. Contohnya adalah eceng gondok di perairan tawar.
+                            </li>
+                            <li>
+                                P (Pollution) - Polusi: Pencemaran dari limbah plastik, bahan kimia industri, pestisida, dan tumpahan minyak merusak tanah, air, dan udara, meracuni kehidupan di dalamnya.
+                            </li>
+                            <li>
+                                P (Population Growth) - Pertumbuhan Populasi Manusia: Peningkatan jumlah penduduk dunia menuntut lebih banyak sumber daya alam, lahan, dan energi, yang memberikan tekanan besar pada ekosistem.
+                            </li>
+                            <li>
+                                O (Overexploitation) - Eksploitasi Berlebihan: Penangkapan ikan berlebihan, perburuan liar, dan penebangan kayu ilegal mengurangi populasi spesies lebih cepat daripada kemampuan mereka untuk bereproduksi.
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ -->
+
+        <!-- CTA -->
+        <section class="relative bg-[url('/public/assets/img/fauna/fauna-5.jpg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative container mx-auto px-8 lg:px-28 py-16 md:py-24 lg:py-28">
+                <div class="md:max-w-lg lg:max-w-xl ml-auto">
+                    <h2 class="text-white text-xl lg:text-2xl font-medium leading-tight mb-5 tracking-wide">Jelajahi Keanekaragaman Flora dan Fauna Indonesia</h2>
+                    <p class="text-white text-base lg:text-lg mb-8">Akses data lengkap tentang flora dan fauna Indonesia.</p>
+                    <a href="/eksplorasi" class="inline-flex items-center bg-lime-200 rounded-full pl-0.5 pr-4 py-0.5 hover:bg-lime-300 transition-colors">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-zinc-800 mr-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                        <span class="text-zinc-800 text-base lg:text-lg font-medium">Mulai Eksplorasi</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End CTA -->
+         
+        <!-- Footer -->
+        <footer class="w-full px-6 md:px-12 lg:px-28 py-16 md:py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
+                <div class="max-w-xs">
+                    <img src="/public/assets/img/logo/logo.png" alt="FLOFANESIA" class="h-16 mb-6">
+                    <p class="text-zinc-800 text-lg md:text-xl">Jelajahi Flora dan Fauna Indonesia</p>
+                    
+                    <div class="flex items-center gap-5 mt-8">
+                    <a href="#" class="text-zinc-800 hover:text-zinc-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-zinc-800 hover:text-zinc-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-zinc-800 hover:text-zinc-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+                    <div>
+                    <h3 class="text-zinc-800 text-xl font-semibold mb-5">Tentang</h3>
+                    <ul class="space-y-2.5">
+                        <li><a href="/public/tentangkami.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Tentang Kami</a></li>
+                        <li><a href="/public/kontak.html" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kontak</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div>
+                    <h3 class="text-zinc-800 text-xl font-semibold mb-5">Artikel</h3>
+                    <ul class="space-y-2.5">
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kategori A</a></li>
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kategori B</a></li>
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Kategori C</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div>
+                    <h3 class="text-zinc-800 text-xl font-semibold mb-5">Eksplorasi</h3>
+                    <ul class="space-y-2.5">
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Peralihan</a></li>
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Asiatis</a></li>
+                        <li><a href="#" class="text-zinc-400 text-lg md:text-xl hover:text-zinc-600">Australis</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 pt-8">
+                <div class="text-zinc-800 text-base font-medium mb-4 md:mb-0">© 2025 Flofanesia</div>
+                <div class="flex gap-8">
+                    <a href="#" class="text-zinc-800 text-base font-medium hover:text-zinc-600">Privacy Policy</a>
+                    <a href="#" class="text-zinc-800 text-base font-medium hover:text-zinc-600">Terms of Use</a>
+                </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </main>
+
+    <script src="/src/js/main.js"></script>
 </body>
 </html>
