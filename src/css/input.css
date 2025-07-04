@@ -6,29 +6,7 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Navigation */
+/* Navbar */
 .nav-hidden {
   transform: translateY(-100%);
-}
-
-/* Tentang Kami */
-.hero-bg {
-  background-image: url('/public/assets/img/background/background_tentangkami1.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.monkey-bg {
-  background-image: url('/public/assets/img/background/background_tentangkami2.png');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Pencarian */
-.species-card {
-  transition: transform 0.3s ease;
-}
-
-.species-card:hover {
-  transform: scale(1.02);
 }
