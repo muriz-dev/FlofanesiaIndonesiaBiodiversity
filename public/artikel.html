@@ -18,14 +18,25 @@
                 <img class="h-8 md:h-11 brightness-0 invert" src="./assets/img/logo/logo.png" alt="FLOFANESIA" />
             </a>
             <div class="hidden lg:flex items-center gap-8 xl:gap-16">
-                <a href="./index.html" class="text-gray-50 text-lg font-semibold hover:text-white">Beranda</a>
-                <a href="./tentangkami.html" class="text-gray-50 text-lg font-semibold hover:text-white">Tentang</a>
+                <a href="./index.html" class="text-gray-50 text-lg font-semibold">Beranda</a>
+                <div class="relative group">
+                    <button class="text-gray-50 text-lg font-semibold flex items-center gap-1">
+                        Tentang
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-gray-50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4">
+                        <a href="./tentangkami.html" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Tentang Kami</a>
+                        <a href="#" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Kontak</a>
+                    </div>
+                </div>
                 <div class="flex flex-col items-center">
                     <a href="artikel.html" class="text-primary-green-200 text-lg font-semibold">Artikel</a>
                     <div class="w-full h-0.5 bg-primary-green-200 rounded-xl"></div>
                 </div>
-                <a href="./eksplorasi-data.html" class="text-gray-50 text-lg font-semibold hover:text-white">Eksplorasi</a>
-                <a href="./pencarian.html" class="text-gray-50 text-lg font-semibold hover:text-white">Pencarian</a>
+                <a href="./eksplorasi-data.html" class="text-gray-50 text-lg font-semibold">Eksplorasi</a>
+                <a href="./pencarian.html" class="text-gray-50 text-lg font-semibold">Pencarian</a>
             </div>
             <button class="lg:hidden text-gray-50" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,7 +46,7 @@
         </nav>
 
         <!-- Mobile Navbar -->
-        <div class="hidden lg:hidden w-full mt-8 pb-4" id="mobile-menu">
+        <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
             <div class="flex flex-col space-y-4">
                 <a href="./index.html" class="text-gray-50 text-lg font-semibold">Beranda</a>
                 <a href="./tentangkami.html" class="text-gray-50 text-lg font-semibold">Tentang</a>
@@ -115,7 +126,7 @@
         <section class="px-8 lg:px-28">
             <h1 class="text-2xl lg:text-4xl font-medium mb-8">Artikel Terbaru</h1>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <a href="detail-artikel.html">
+                <div>
                     <div class="relative max-w-xl">
                         <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-19.jpg" alt="Random image">
                         <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
@@ -126,11 +137,9 @@
                         <p class="text-sm font-medium">03-03-2025</p>
                         <h4 class="text-lg lg:text-xl font-semibold mt-1">Fakta Menarik Cendrawasih</h4>
                         <p class="text-base lg:text-lg mt-2">Dikenal luas sebagai "Burung Surga" ...</p>
-                        <a href="./detail-artikel.html">
-                            <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya<button>
-                        </a>
+                        <a href="./detail-artikel.html"><button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button></a>
                     </div>
-                </a>
+                </div>
                 <div>
                     <div class="relative max-w-xl">
                         <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-6.jpg" alt="Random image">
