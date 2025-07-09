@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search-input');
-  const searchButton = document.getElementById('search-button');
   const speciesCards = document.querySelectorAll('.species-card');
   const notFoundSection = document.getElementById('species-not-found');
+  
+  if (!searchInput || !notFoundSection) return;
   
   speciesCards.forEach(card => card.classList.add('hidden'));
   
@@ -14,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     notFoundSection.classList.toggle('flex', !hasInput);
   };
   
-  searchButton.addEventListener('click', handleSearch);
+  document.getElementById('search-button')?.addEventListener('click', handleSearch);
   searchInput.addEventListener('keypress', e => e.key === 'Enter' && (e.preventDefault(), handleSearch()));
 });
