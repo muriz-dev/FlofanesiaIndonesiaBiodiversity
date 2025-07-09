@@ -87,15 +87,11 @@
     <!-- Hasil -->
     <section class="w-full py-20 bg-white">
       <div class="self-stretch w-full px-6 md:px-12 lg:px-24 pt-20 pb-28 bg-white inline-flex flex-col justify-start items-center gap-8">
-        <div class="self-stretch w-full flex flex-col justify-start items-start gap-5">
-          <div class="self-stretch w-full flex flex-col justify-start items-start gap-8">
-            <div class="self-stretch w-full bg-white flex flex-col justify-start items-center gap-8">
-              <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-                
+              <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center gap-8 w-full">
                 <!-- Artikel Corak di Anggrek Macan -->
-                <a href="detail-artikel.html" class="article-card hidden justify-center items-start gap-5" data-name="corak anggrek macan" data-latin="orchid">
+                <a href="detail-artikel.html" class="article-card hidden" data-name="corak anggrek macan" data-latin="orchid">
                   <div>
-                    <div class="relative max-w-xl">
+                    <div class="relative">
                         <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-15.png" alt="Random image">
                         <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
                             <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Isu Lingkungan</p>
@@ -111,9 +107,9 @@
                 </a>
 
                 <!-- Artikel Cantik Tapi Invasif di Perairan -->
-                <a href="detail-artikel.html" class="article-card hidden justify-center items-start gap-5" data-name="cantik tapi invasif" data-latin="invasive species">
+                <a href="detail-artikel.html" class="article-card hidden" data-name="cantik tapi invasif" data-latin="invasive species">
                   <div>
-                    <div class="relative max-w-xl">
+                    <div class="relative">
                         <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-16.png" alt="Random image">
                         <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
                             <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Konservasi</p>
@@ -129,9 +125,9 @@
                 </a>
 
                 <!-- Artikel Owa Bilau -->
-                <a href="detail-artikel.html" class="article-card hidden justify-center items-start gap-5" data-name="owa bilau lincah" data-latin="gibbon">
+                <a href="detail-artikel.html" class="article-card hidden" data-name="owa bilau lincah" data-latin="gibbon">
                   <div>
-                    <div class="relative max-w-xl">
+                    <div class="relative">
                         <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-23.png" alt="Random image">
                         <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
                             <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Habitat</p>
@@ -146,17 +142,15 @@
                   </div>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
+            
 
         <!-- Not Found -->
-        <div id="article-not-found" class="hidden flex-col items-center justify-center text-center mt-16">
+        <div id="article-not-found" class="hidden flex-col items-center justify-center text-center mt-4">
           <div class="mb-6">
             <img src="./assets/img/404-not-found.png" alt="Article Not Found" class="w-64 h-64 object-contain mx-auto rounded-full">
           </div>
-          <h2 class="text-2xl font-medium text-gray-900">Hmm... Artikel ini tidak ditemukan atau</h2>
-          <h2 class="text-2xl font-medium text-gray-900">belum tersedia dalam koleksi kami.</h2>
+          <h2 class="text-xl lg:text-2xl font-medium text-gray-900">Hmm... Artikel ini tidak ditemukan atau</h2>
+          <h2 class="text-xl lg:text-2xl font-medium text-gray-900">belum tersedia dalam koleksi kami.</h2>
         </div>
         
       </div>
