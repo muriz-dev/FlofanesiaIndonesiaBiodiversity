@@ -86,63 +86,69 @@
 
     <!-- Hasil -->
     <section class="w-full py-20 bg-white">
-      <div class="container mx-auto px-6 md:px-12 lg:px-28">
-        <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="self-stretch px-6 md:px-12 lg:px-28 pt-20 pb-28 bg-white inline-flex flex-col justify-start items-center gap-8">
+        <div class="self-stretch flex flex-col justify-start items-start gap-5">
+          <div class="self-stretch flex flex-col justify-start items-start gap-8">
+            <div class="self-stretch bg-white flex flex-col justify-start items-center gap-8">
+              <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Artikel Corak di Anggrek Macan -->
+                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="corak anggrek macan" data-latin="orchid">
+                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
+                    <img src="./assets/img/flora/flora-15.png" alt="Corak di Anggrek Macan" class="w-full h-full object-cover" />
+                    <div class="absolute top-4 left-4">
+                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Isu Lingkungan</span>
+                    </div>
+                  </div>
+                  <div class="w-full flex flex-col justify-start items-start gap-1">
+                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">16 JAN 2025</div>
+                    <div class="flex flex-col justify-start items-start gap-2">
+                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Corak di Anggrek Macan</div>
+                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Pola lorengnya yang unik membuat...</div>
+                    </div>
+                  </div>
+                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
+                </a>
 
-          <!-- Artikel Corak di Anggrek Macan -->
-          <a href="detail-artikel.html" class="species-card hidden transition-transform hover:scale-[1.02] duration-300" data-name="corak anggrek macan" data-latin="orchid">
-            <div class="bg-white rounded-[20px] overflow-hidden shadow-lg">
-              <div class="relative">
-                <img src="./assets/img/flora/flora-15.png" alt="Corak di Anggrek Macan" class="w-full aspect-video object-cover">
-                <div class="absolute top-4 left-4">
-                  <span class="bg-primary-green-900 text-white px-3 py-1 rounded-full text-sm font-medium">Isu Lingkungan</span>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-500 text-sm mb-2">16 JAN 2025</p>
-                <h2 class="text-xl font-bold text-gray-900 mb-3 leading-tight">Corak di Anggrek Macan</h2>
-                <p class="text-gray-600 text-base mb-4">Pola lorengnya yang unik membuat...</p>
-                <button class="text-primary-green-900 font-semibold text-base hover:underline">Baca Selengkapnya</button>
+                <!-- Artikel Cantik Tapi Invasif di Perairan -->
+                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="cantik tapi invasif" data-latin="invasive species">
+                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
+                    <img src="./assets/img/flora/flora-16.png" alt="Cantik Tapi Invasif di Perairan" class="w-full h-full object-cover" />
+                    <div class="absolute top-4 left-4">
+                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Konservasi</span>
+                    </div>
+                  </div>
+                  <div class="w-full flex flex-col justify-start items-start gap-1">
+                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">14 JAN 2025</div>
+                    <div class="flex flex-col justify-start items-start gap-2">
+                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Cantik Tapi Invasif di Perairan</div>
+                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Pola lorengnya yang unik membuat...</div>
+                    </div>
+                  </div>
+                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
+                </a>
+
+                <!-- Artikel Owa Bilau -->
+                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="owa bilau lincah" data-latin="gibbon">
+                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
+                    <img src="./assets/img/fauna/fauna-23.png" alt="Owa Bilau, Si Lincah Sulawesi" class="w-full h-full object-cover" />
+                    <div class="absolute top-4 left-4">
+                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Habitat</span>
+                    </div>
+                  </div>
+                  <div class="w-full flex flex-col justify-start items-start gap-1">
+                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">12 JAN 2025</div>
+                    <div class="flex flex-col justify-start items-start gap-2">
+                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Owa Bilau, Si Lincah Sulawesi</div>
+                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Owa bilau dikenal karena lompatan...</div>
+                    </div>
+                  </div>
+                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
+                </a>
+
               </div>
             </div>
-          </a>
-
-          <!-- Artikel Cantik Tapi Invasif di Perairan -->
-          <a href="detail-artikel.html" class="species-card hidden transition-transform hover:scale-[1.02] duration-300" data-name="cantik tapi invasif" data-latin="invasive species">
-            <div class="bg-white rounded-[20px] overflow-hidden shadow-lg">
-              <div class="relative">
-                <img src="./assets/img/flora/flora-16.png" alt="Cantik Tapi Invasif di Perairan" class="w-full aspect-video object-cover">
-                <div class="absolute top-4 left-4">
-                  <span class="bg-primary-green-900 text-white px-3 py-1 rounded-full text-sm font-medium">Konservasi</span>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-500 text-sm mb-2">14 JAN 2025</p>
-                <h2 class="text-xl font-bold text-gray-900 mb-3 leading-tight">Cantik Tapi Invasif di Perairan</h2>
-                <p class="text-gray-600 text-base mb-4">Pola lorengnya yang unik membuat...</p>
-                <button class="text-primary-green-900 font-semibold text-base hover:underline">Baca Selengkapnya</button>
-              </div>
-            </div>
-          </a>
-
-          <!-- Artikel Owa Bilau -->
-          <a href="detail-artikel.html" class="species-card hidden transition-transform hover:scale-[1.02] duration-300" data-name="owa bilau lincah" data-latin="gibbon">
-            <div class="bg-white rounded-[20px] overflow-hidden shadow-lg">
-              <div class="relative">
-                <img src="./assets/img/fauna/fauna-23.png" alt="Owa Bilau, Si Lincah Sulawesi" class="w-full aspect-video object-cover">
-                <div class="absolute top-4 left-4">
-                  <span class="bg-primary-green-900 text-white px-3 py-1 rounded-full text-sm font-medium">Habitat</span>
-                </div>
-              </div>
-              <div class="p-6">
-                <p class="text-gray-500 text-sm mb-2">12 JAN 2025</p>
-                <h2 class="text-xl font-bold text-gray-900 mb-3 leading-tight">Owa Bilau, Si Lincah Sulawesi</h2>
-                <p class="text-gray-600 text-base mb-4">Owa bilau dikenal karena lompatan...</p>
-                <button class="text-primary-green-900 font-semibold text-base hover:underline">Baca Selengkapnya</button>
-              </div>
-            </div>
-          </a>
-
+          </div>
         </div>
 
         <!-- Not Found -->
