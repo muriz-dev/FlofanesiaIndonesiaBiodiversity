@@ -12,140 +12,139 @@
 </head>
 <body class="bg-white">
 
-  <!-- Navbar -->
-  <header class="w-full px-6 md:px-12 lg:px-28 py-6 md:py-8 fixed top-0 left-0 z-50 bg-primary-dark-green-900/30 backdrop-blur-sm transition-transform duration-300">
-      <nav class="flex flex-wrap justify-between items-center">
-          <a href="./index.html" class="flex items-center">
-              <img class="h-8 md:h-11 brightness-0 invert" src="./assets/img/logo/logo.png" alt="FLOFANESIA" />
-          </a>
-          <div class="hidden lg:flex items-center gap-8 xl:gap-16">
-              <a href="index.html" class="text-gray-50 text-lg font-semibold">Beranda</a>
-              <div class="relative group">
-                  <button class="text-gray-50 text-lg font-semibold flex items-center gap-1">
-                      Tentang
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180">
-                          <path d="m6 9 6 6 6-6"/>
-                      </svg>
-                  </button>
-                  <div class="absolute top-full left-0 mt-2 w-48 bg-gray-50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4">
-                      <a href="./tentangkami.html" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Tentang Kami</a>
-                      <a href="./kontak.html" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Kontak</a>
-                  </div>
-              </div>
-              <a href="./artikel.html" class="text-gray-50 text-lg font-semibold">Artikel</a>
-              <a href="./eksplorasi-data.html" class="text-gray-50 text-lg font-semibold">Eksplorasi</a>
-              <div class="flex flex-col items-center">
-                  <a href="./pencarian.html" class="text-primary-green-200 text-lg font-semibold">Pencarian</a>
-                  <div class="w-full h-0.5 bg-primary-green-200 rounded-xl"></div>
-              </div>
-          </div>
-          <button class="lg:hidden text-gray-50" id="mobile-menu-button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-          </button>
-      </nav>
+  <!-- Header Navigation -->
+    <header class="w-full px-6 md:px-12 lg:px-24 py-6 md:py-8 fixed top-0 left-0 z-50 bg-primary-dark-green-900/30 backdrop-blur-sm transition-transform duration-300">
+        <nav class="flex flex-wrap justify-between items-center">
+            <a href="./index.html" class="flex items-center">
+                <img class="h-8 md:h-11 brightness-0 invert" src="./assets/img/logo/logo.png" alt="FLOFANESIA" />
+            </a>
+            <div class="hidden lg:flex items-center gap-8 xl:gap-16">
+                <a href="./index.html" class="text-gray-50 text-lg font-semibold">Beranda</a>
+                <div class="relative group">
+                    <button class="text-gray-50 text-lg font-semibold flex items-center gap-1">
+                        Tentang
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-gray-50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-4">
+                        <a href="./tentang-kami.html" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Tentang Kami</a>
+                        <a href="./kontak.html" class="text-gray-900 text-lg font-semibold hover:text-primary-green-900">Kontak</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <a href="artikel.html" class="text-primary-green-200 text-lg font-semibold">Artikel</a>
+                    <div class="w-full h-0.5 bg-primary-green-200 rounded-xl"></div>
+                </div>
+                <a href="./eksplorasi-florafauna.html" class="text-gray-50 text-lg font-semibold">Eksplorasi</a>
+                <a href="./pencarian.html" class="text-gray-50 text-lg font-semibold">Pencarian</a>
+            </div>
+            <button class="lg:hidden text-gray-50" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
 
-      <!-- Mobile Navbar -->
-      <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
-          <div class="flex flex-col space-y-4">
-              <a href="./index.html" class="text-primary-green-200 text-lg font-semibold">Beranda</a>
-              <a href="./tentangkami.html" class="text-gray-50 text-lg font-semibold">Tentang</a>
-              <a href="./artikel.html" class="text-gray-50 text-lg font-semibold">Artikel</a>
-              <a href="./eksplorasi-data.html" class="text-gray-50 text-lg font-semibold">Eksplorasi</a>
-              <a href="./pencarian.html" class="text-gray-50 text-lg font-semibold">Pencarian</a>
-          </div>
-      </div>
-  </header>
+        <!-- Mobile Navbar -->
+        <div class="hidden lg:hidden w-full mt-4 pb-4" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="./index.html" class="text-gray-50 text-lg font-semibold">Beranda</a>
+                <a href="./tentang-kami.html" class="text-gray-50 text-lg font-semibold">Tentang</a>
+                <a href="./artikel.html" class="text-primary-green-200 text-lg font-semibold">Artikel</a>
+                <a href="./eksplorasi-florafauna.html" class="text-gray-50 text-lg font-semibold">Eksplorasi</a>
+                <a href="./pencarian.html" class="text-gray-50 text-lg font-semibold">Pencarian</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Navigation -->
 
   <main>
-
     <!-- Search -->
     <section class="w-full pt-36 md:pt-44 pb-20 bg-gray-950">
-      <div class="container mx-auto px-6 md:px-12 lg:px-28">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-5">
-          <h1 class="text-gray-50 text-2xl md:text-4xl font-medium leading-tight">Jelajahi Keajaiban Hayati Indonesia</h1>
-          <p class="text-gray-50 text-lg md:text-xl">Cari data fauna atau flora</p>
-        </div>
-        <div class="relative">
+        <div class="px-6 md:px-12 lg:px-24">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8">
+              <h1 class="text-white text-2xl md:text-3xl font-medium leading-tight">Jelajahi Keajaiban Hayati Indonesia</h1>
+              <p class="text-white text-lg md:text-right">Cari artikel mengenai flora dan fauna di Indonesia</p>
+          </div>
+          <div class="relative">
           <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Cari Spesies..." 
-            class="w-full px-6 py-4 bg-gray-700 text-white rounded-[40px] outline outline-2 outline-offset-[-2px] outline-gray-300 text-lg md:text-xl placeholder-gray-400 focus:outline-white"
-          >
+              type="text" 
+              id="search-input" 
+              placeholder="Cari Spesies..." 
+              class="w-full px-6 py-2 lg:py-4 bg-gray-700 text-white rounded-[40px] outline outline-2 outline-offse[-2pxoutline-stone-300 text-lg placeholder-neutral-400 focus:outline-white">
           <button id="search-button" class="absolute right-6 top-1/2 transform -translate-y-1/2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-neutral-400">
               <circle cx="11" cy="11" r="8"></circle>
               <path d="m21 21-4.3-4.3"></path>
-            </svg>
+              </svg>
           </button>
         </div>
       </div>
     </section>
-
+    <!-- End Search -->
+    
     <!-- Hasil -->
     <section class="w-full py-20 bg-white">
-      <div class="self-stretch px-6 md:px-12 lg:px-28 pt-20 pb-28 bg-white inline-flex flex-col justify-start items-center gap-8">
-        <div class="self-stretch flex flex-col justify-start items-start gap-5">
-          <div class="self-stretch flex flex-col justify-start items-start gap-8">
-            <div class="self-stretch bg-white flex flex-col justify-start items-center gap-8">
-              <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="self-stretch w-full px-6 md:px-12 lg:px-24 pt-20 pb-28 bg-white inline-flex flex-col justify-start items-center gap-8">
+        <div class="self-stretch w-full flex flex-col justify-start items-start gap-5">
+          <div class="self-stretch w-full flex flex-col justify-start items-start gap-8">
+            <div class="self-stretch w-full bg-white flex flex-col justify-start items-center gap-8">
+              <div id="species-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                 
                 <!-- Artikel Corak di Anggrek Macan -->
-                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="corak anggrek macan" data-latin="orchid">
-                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
-                    <img src="./assets/img/flora/flora-15.png" alt="Corak di Anggrek Macan" class="w-full h-full object-cover" />
-                    <div class="absolute top-4 left-4">
-                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Isu Lingkungan</span>
+                <a href="detail-artikel.html" class="species-card hidden justify-center items-start gap-5" data-name="corak anggrek macan" data-latin="orchid">
+                  <div>
+                    <div class="relative max-w-xl">
+                        <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-15.png" alt="Random image">
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                            <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Isu Lingkungan</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-medium">03-03-2025</p>
+                        <h4 class="text-lg lg:text-xl font-semibold mt-1">Corak di Anggrek Macan</h4>
+                        <p class="text-base lg:text-lg mt-2">Pola lorengnya yang unik membuat ...</p>
+                        <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col justify-start items-start gap-1">
-                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">16 JAN 2025</div>
-                    <div class="flex flex-col justify-start items-start gap-2">
-                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Corak di Anggrek Macan</div>
-                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Pola lorengnya yang unik membuat...</div>
-                    </div>
-                  </div>
-                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
                 </a>
 
                 <!-- Artikel Cantik Tapi Invasif di Perairan -->
-                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="cantik tapi invasif" data-latin="invasive species">
-                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
-                    <img src="./assets/img/flora/flora-16.png" alt="Cantik Tapi Invasif di Perairan" class="w-full h-full object-cover" />
-                    <div class="absolute top-4 left-4">
-                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Konservasi</span>
+                <a href="detail-artikel.html" class="species-card hidden justify-center items-start gap-5" data-name="cantik tapi invasif" data-latin="invasive species">
+                  <div>
+                    <div class="relative max-w-xl">
+                        <img class="h-full w-full object-cover rounded-xl" src="./assets/img/flora/flora-16.png" alt="Random image">
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                            <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Konservasi</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-medium">03-03-2025</p>
+                        <h4 class="text-lg lg:text-xl font-semibold mt-1">Cantik Tapi Invasif di Perairan</h4>
+                        <p class="text-base lg:text-lg mt-2">Pola lorengnya yang unik membuat ...</p>
+                        <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col justify-start items-start gap-1">
-                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">14 JAN 2025</div>
-                    <div class="flex flex-col justify-start items-start gap-2">
-                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Cantik Tapi Invasif di Perairan</div>
-                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Pola lorengnya yang unik membuat...</div>
-                    </div>
-                  </div>
-                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
                 </a>
 
                 <!-- Artikel Owa Bilau -->
-                <a href="detail-artikel.html" class="species-card hidden flex flex-col justify-center items-start gap-5" data-name="owa bilau lincah" data-latin="gibbon">
-                  <div class="relative w-full aspect-square bg-gray-300 rounded-2xl overflow-hidden">
-                    <img src="./assets/img/fauna/fauna-23.png" alt="Owa Bilau, Si Lincah Sulawesi" class="w-full h-full object-cover" />
-                    <div class="absolute top-4 left-4">
-                      <span class="bg-gray-900/40 text-white px-3 py-1 rounded-full text-sm font-medium">Habitat</span>
+                <a href="detail-artikel.html" class="species-card hidden justify-center items-start gap-5" data-name="owa bilau lincah" data-latin="gibbon">
+                  <div>
+                    <div class="relative max-w-xl">
+                        <img class="h-full w-full object-cover rounded-xl" src="./assets/img/fauna/fauna-23.png" alt="Random image">
+                        <div class="absolute inset-0 bottom-0 right-5 flex items-start justify-start p-4">
+                            <p class="bg-gray-500/25 backdrop-blur-sm text-white text-sm lg:text-base font-medium py-2 px-4 rounded-full">Habitat</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-medium">03-03-2025</p>
+                        <h4 class="text-lg lg:text-xl font-semibold mt-1">Owa Bilau, Si Lincah Sulawesi</h4>
+                        <p class="text-base lg:text-lg mt-2">Owa bilau dikenal karena lompatan ...</p>
+                        <button class="border text-sm lg:text-base font-medium p-4 rounded-full mt-4">Baca Selengkapnya</button>
                     </div>
                   </div>
-                  <div class="w-full flex flex-col justify-start items-start gap-1">
-                    <div class="justify-start text-gray-800 text-sm font-medium leading-3">12 JAN 2025</div>
-                    <div class="flex flex-col justify-start items-start gap-2">
-                      <div class="justify-start text-gray-800 text-xl font-semibold leading-loose">Owa Bilau, Si Lincah Sulawesi</div>
-                      <div class="justify-start text-gray-800 text-lg font-normal leading-normal">Owa bilau dikenal karena lompatan...</div>
-                    </div>
-                  </div>
-                  <span class="bg-white border border-gray-300 text-gray-900 px-6 py-3 rounded-full text-lg font-medium">Baca Selengkapnya</span>
                 </a>
-
               </div>
             </div>
           </div>
@@ -164,7 +163,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="w-full px-6 md:px-12 lg:px-28 py-16 md:py-20 lg:py-28 bg-white">
+    <footer class="w-full px-6 md:px-12 lg:px-24 py-16 md:py-20 lg:py-28 bg-white">
         <div class="mx-auto">
             <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16">
                 <div class="max-w-x">
